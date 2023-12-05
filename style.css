@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+    direction: ltr;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0px;
+    font-size: 14px;
+    margin-left: 450px;
+}
+
+.container{
+    width: 100%;
+}
+
+.container .phone{
+    width: 400px;
+    margin: opx auto;
+    background-color: rgba(0, 0, 0, 0.05);
+    min-height: 100vh;             /*میخوایم بگیم حداقل ارتفاع به اندازه ارتفاع صفحه نمایشمون باشه پس میگیم 100درصد ارتفاعد رو دربر بگیره*/
+}
+
+/*  head nav  */
+
+.head-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.head-nav .right i{
+    font-size: 1.5em;
+}
+
+.head-nav .left{}
+
+.head-nav .left span{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    margin-right: 5px;
+}
+
+.head-nav .left i{
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* profile */
+
+.profile .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile .info .image{
+    position: relative;
+}
+
+.profile .info .image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile .info .image i{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #3498db;
+    font-size: 1.4em;
+}
+
+.profile .info .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .info .item .number{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.profile .info .item .title{
+    font-size: 1.1em;
+    color: #333;
+}
+
+/*  caption  */
+
+.caption{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.caption .id{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.caption .tag{
+    font-size: 1.1em;
+    color: #032a43;
+    margin-top: 5px;
+}
+
+/*  edit profile  */
+
+.edit-profile{
+    display: block;
+    text-align: center;
+    color: #333;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 6px 0px;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+ /*  highlight  */
+
+ .highlight{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+ }
+
+ .highlight .add-highlight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .highlight .add-highlight .add{
+    font-size: 3em;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #444;
+ }
+
+ .highlight .add-highlight span{
+    margin-top: 5px;
+    color: #333;
+ }
+
+ .highlight .story-high{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+ }
+
+ .highlight .story-high .image-container{
+    padding: 3px;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+ }
+
+ .highlight .story-high .image-container img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+ }
+
+ .highlight .story-high span{
+    margin-top: 5px;
+    color: #333;
+ }
+
+ /* navigation */
+
+ .navigation{
+    display: flex;
+ }
+
+ .navigation div{
+    flex: 1;
+    text-align:center ;
+ }
+
+ .navigation div i{
+    font-size: 1.3em;
+    padding: 15px;
+    color: #777;
+ }
+
+ .nav-active{
+    border-bottom: 1.5px solid #444;
+ }
+
+ .nav-active i{
+    color: #333 !important;
+ }
+
+ /*  galery  */
+
+ .galery{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+ .galery img{
+    width: 32%;
+    height: 120px;
+    padding: 3px;    
+ }
+
+/*  footer */
+
+.footer{
+    width: 400px;
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a{
+    color: #333;
+    font-size: 1.5em;
+}
+
+.footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
